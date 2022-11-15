@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  apache-web:
+    image: httpd:latest
+    ports:
+    - '80:80'
+    volumes:
+    - /projeto1-docker-dio/apache-web:/usr/local/apache/htdocs
